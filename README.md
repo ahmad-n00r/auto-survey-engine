@@ -37,13 +37,6 @@ Clone the project from GitHub:
 git clone https://github.com/ahmad-n00r/auto-survey-engine.git
 cd auto-survey-engine
 ```
-### 3. Install dependencies
-Install the required packages:
-
-```
-npm install
-npx playwright install chromium firefox
-```
 
 > All commands must be executed from inside the project folder.
 
@@ -235,4 +228,5 @@ node autoSurvey.js
 
 ## المطوّر
 ahmad-n00r
+
 
