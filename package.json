@@ -1,0 +1,14 @@
+{
+  "name": "auto-survey-engine",
+  "version": "1.0.0",
+  "description": "Generic auto survey engine using Playwright",
+  "main": "autoSurvey.js",
+  "scripts": {
+    "start": "node autoSurvey.js"
+  },
+  "author": "ahmad-n00r",
+  "license": "MIT",
+  "dependencies": {
+    "playwright": "^1.41.0"
+  }
+}
