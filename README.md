@@ -44,9 +44,37 @@ Install the required packages:
 npm install
 npx playwright install chromium firefox
 ```
-## Usage
-Run the script:
 
+> All commands must be executed from inside the project folder.
+
+## Usage
+
+Before running the script, make sure everything is inside a single directory.
+
+### Step 1: Create a project folder
+Create a new folder (for example):
+
+```
+mkdir auto
+cd auto
+```
+### Step 2: Place the file inside the folder
+Make sure the following file exists inside the folder:
+
+- `autoSurvey.js` – contains all automation logic (browser selection, login, survey handling).
+
+
+
+### Step 3: Install dependencies
+Run the following commands inside the same folder:
+
+
+```
+npm install
+npx playwright install chromium firefox
+```
+### Step 4: Run the script
+Execute the script from inside the folder:
 
 
 ```
@@ -62,19 +90,20 @@ Username
 
 Password
 
-The browser will open and automation will start automatically.
+The browser will open automatically and automation will start.
+No additional configuration files are required.
 
 ## Supported Survey Types
-Radio buttons (ABCD, 1234, text-based options)
 
-Select dropdown questions
+- Radio buttons (ABCD, 1234, text-based options)
+- Select dropdown questions
+- Reload-based or simple navigation surveys
 
-Reload-based or simple navigation surveys
 
 ## Limitations
-CAPTCHA and OTP are not supported
+- CAPTCHA and OTP are not supported
+- Advanced bot-protected websites may require tuning
 
-Advanced bot-protected websites may require tuning
 
 ## Disclaimer
 This project is intended for personal, educational, and authorized use only.
@@ -82,9 +111,11 @@ This project is intended for personal, educational, and authorized use only.
 The author is not responsible for any misuse.
 
 ## Author
+
 ahmad-n00r
 
 ## License
+
 MIT License
 
 
@@ -136,12 +167,42 @@ cd auto-survey-engine
 ```
 npm install
 npx playwright install chromium firefox
+
 ```
 ## طريقة التشغيل
-شغّل السكربت:
+
+قبل تشغيل السكربت، يجب وضع كل شيء داخل مجلد واحد.
+
+### الخطوة 1: إنشاء مجلد للمشروع
+قم بإنشاء مجلد جديد (مثال):
+
+```
+mkdir auto
+cd auto
+
+```
+### الخطوة 2: وضع الملف داخل المجلد
+تأكد من وجود الملف التالي داخل نفس المجلد:
+
+- `autoSurvey.js` – يحتوي على كامل منطق التشغيل.
+
+
+
+### الخطوة 3: تثبيت المكتبات
+من داخل نفس المجلد، نفّذ الأوامر التالية:
+
+
+```
+npm install
+npx playwright install chromium firefox
+
+```
+### الخطوة 4: تشغيل السكربت
+شغّل السكربت من داخل المجلد:
 
 ```
 node autoSurvey.js
+
 ```
 سيُطلب منك إدخال:
 
@@ -153,19 +214,19 @@ node autoSurvey.js
 
 كلمة المرور
 
-سيتم فتح المتصفح وتبدأ الأتمتة تلقائيًا.
+سيتم فتح المتصفح تلقائيًا وتبدأ الأتمتة مباشرة.
+لا توجد أي ملفات إعدادات إضافية
 
 ## أنواع الاستبيانات المدعومة
-أزرار اختيار (ABCD أو 1234 أو نصوص)
+- أزرار اختيار (ABCD أو 1234 أو نصوص)
+- أسئلة القوائم المنسدلة
+- استبيانات تعتمد على إعادة تحميل الصفحة أو تنقل بسيط
 
-أسئلة القوائم المنسدلة
-
-استبيانات تعتمد على إعادة تحميل الصفحة أو تنقل بسيط
 
 ## القيود
-الكابتشا والتحقق الثنائي غير مدعومين
+- الكابتشا والتحقق الثنائي غير مدعومين
+- المواقع ذات الحماية العالية قد تحتاج ضبط إضافي
 
-المواقع ذات الحماية العالية قد تحتاج ضبط إضافي
 
 ## إخلاء المسؤولية
 هذا المشروع مخصص للاستخدام الشخصي والتعليمي وبموافقة صريحة فقط.
@@ -174,3 +235,4 @@ node autoSurvey.js
 
 ## المطوّر
 ahmad-n00r
+
